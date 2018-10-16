@@ -1,0 +1,665 @@
+/* ------------------------- navigation ------------------------- */
+
+
+
+/* for computers */
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #393D3F;
+}
+
+ul.navigationButtons {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.navigationButtons li {
+    width: auto;
+    float: left;
+}
+
+ul.navigationButtons a {
+    display: block;
+    
+    font: 1.0625em 'Nunito', sans-serif;
+    line-height: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 25px;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+ul.navigationButtons a:hover {
+    color: #15C3DB;
+}
+
+
+
+/* for and tablets */
+
+.navigationTitle {
+    
+    display: none; 
+    /* displaying only width < 1025px */
+    
+    width: auto;
+    float: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navigationTitle a {
+    padding: 0 30px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-out;
+}
+   
+.navigationTitle a:hover {
+    color: #15C3DB;
+}
+
+.sideButtonsMenu {
+    
+    display: none;
+    /* displaying only width < 1025px */
+    
+    width: 100px;
+    height: 100px;
+    float: right;
+    background-image: url(../images/menu.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #393D3F;
+    transition: background 0.3s ease-out;
+}
+
+.sideButtonsMenu:hover {
+    background-color: #2C3338;
+}
+
+
+
+/* for all @medias (navigation) */
+
+@media (max-width: 1024px) {
+    ul.navigationButtons {
+        display: none;
+    }
+    
+    .navigationTitle {
+        display: block;
+    }
+    
+    .sideButtonsMenu {
+        display: block;
+    }
+}
+
+/* from 641px to 833px */
+
+@media (min-width: 641px) and (max-width: 833px) {
+    nav {
+        height: 90px;
+    }
+    
+    .navigationTitle {
+        height: 90px;
+        font-size: 18px;
+        line-height: 90px;
+    }
+    
+    .sideButtonsMenu {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* from 401px to 640px */
+
+@media (min-width: 401px) and (max-width: 640px) {
+    nav {
+        height: 80px;
+    }
+    
+    .navigationTitle {
+        height: 80px;
+        font-size: 15px;
+        line-height: 80px;
+    }
+    
+    .navigationTitle a {
+        padding: 0 20px;
+    }
+    
+    .sideButtonsMenu {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* before 400px */
+
+@media (max-width: 400px) {
+    nav {
+        height: 70px;
+    }
+    
+    .navigationTitle {
+        height: 70px;
+        font-size: 13px;
+        line-height: 70px;
+    }
+    
+    .navigationTitle a {
+        padding: 0 20px;
+    }
+    
+    .sideButtonsMenu {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* ------------------------- end (navigation) ------------------------- */
+
+
+
+
+
+/* ------------------------------ content ----------------------------- */
+
+
+
+/* ---------- PSD templates ---------- */
+
+.psdTemplatesBlock {
+    width: auto;
+    height: 500px;
+    background-image: linear-gradient(135deg, #19B4C6, #078AA4);
+}
+
+.psdTemplatesWrapper {
+    width: 575px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 140px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.psdTemplatesText {
+    font-size: 3.125em;
+    padding-bottom: 10%;
+}
+
+.psdTemplatesLink a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.375em;
+    color: white;
+    background-image: url(right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 4%;
+    background-position: center right;
+    transition: color 0.3s ease-out;
+}
+
+.psdTemplatesLink a:hover {
+    color: #d2d2d2;
+}
+
+
+
+/* from 641px to 833px */
+
+@media (min-width: 641px) and (max-width: 833px) {
+    .psdTemplatesBlock {
+        height: 450px;
+    }
+    
+    .psdTemplatesWrapper {
+        width: 514px;
+        padding-top: 121px;
+    }
+    
+    .psdTemplatesText {
+        font-size: 2.813em;
+    }
+
+    .psdTemplatesLink a{
+        font-size: 1.25em;
+    }
+}
+
+/* from 401px to 640px */
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .psdTemplatesBlock {
+        height: 350px;
+    }
+    
+    .psdTemplatesWrapper {
+        width: 286px;
+        padding-top: 121px;
+    }
+    
+    .psdTemplatesText {
+        font-size: 1.563em;
+    }
+
+    .psdTemplatesLink a{
+        font-size: 1.188em;
+    }
+}
+
+/* before 400px */
+
+@media (max-width: 400px) {
+    .psdTemplatesBlock {
+        height: 250px;
+    }
+    
+    .psdTemplatesWrapper {
+        width: 270px;
+        padding-top: 78px;
+    }
+    
+    .psdTemplatesText {
+        font-size: 1.4375em;
+    }
+
+    .psdTemplatesLink a{
+        font-size: 1.188em;
+    }
+}
+
+/* ------ end (PSD templates) -------- */
+
+
+
+/* --------- Robin Hood line --------- */
+
+.robinHoodBlock {
+    width: auto;
+    height: 180px;
+    background-color: #27212C;
+}
+
+.robinHoodTitle {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #9887A6;
+    line-height: 180px;
+    padding-left: 5%;
+    font-size: 35px;
+}
+
+.robinHoodLink {
+    width: 180px;
+    height: 180px;
+    background-color: #BC3183;
+    float: right;
+    display: block;
+    background-image: url(../images/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20%;
+    transition: background 0.3s ease-out;
+}
+
+.robinHoodLINK:hover {
+    background-color: #D73896;
+}
+
+
+
+/* from 834px to 1024px */
+
+@media (min-width: 834px) and (max-width: 1024px) {
+    .robinHoodBlock {
+        height: 140px;
+        background-color: #27212C;
+    }
+    
+    .robinHoodTitle {
+        font-size: 23px;
+        line-height: 140px;
+    }
+    
+    .robinHoodLink {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* from 641px to 833px */
+
+@media (min-width: 641px) and (max-width: 833px) {
+    .robinHoodBlock {
+        height: 120px;
+    }
+    
+    .robinHoodTitle {
+        font-size: 20px;
+        line-height: 120px;
+    }
+    
+    .robinHoodLink {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* from 401px to 640px */
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .robinHoodBlock {
+        height: 100px;
+    }
+    
+    .robinHoodTitle {
+        font-size: 15px;
+        line-height: 100px;
+        padding-left: 4%;
+    }
+    
+    .robinHoodLink {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* before 400px */
+
+@media (max-width: 400px) {
+    .robinHoodBlock {
+        height: 80px;
+    }
+    
+    .robinHoodTitle {
+        font-size: 12px;
+        line-height: 80px;
+    }
+    
+    .robinHoodLink {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* ------ end (Robin Hood line) ------ */
+
+
+
+/* ----------- Images line ----------- */
+
+.wrapper {
+    display: block;
+    width: calc(100% / 3);
+    padding-top: calc(100% / 3);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.link {
+    display: block;
+    background-image: url(../images/right-arrow.png);
+    background-color: #5B0FA1;
+    background-size: 13%;
+    transition: background 0.3s ease-out;
+}
+
+.link:hover {
+    background-color: #6924A9;
+}
+
+.bridgeImage {
+    display: block;
+    background-image: url(../images/bridge.jpg);
+}
+
+.girlImage {
+    display: block;
+    background-image: url(../images/girl.jpg);
+}
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .wrapper {
+        width: auto;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        float: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        width: auto;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        float: none;
+    }
+}
+
+/* -------- end (Images line) -------- */
+
+
+
+/* ------------ BlazRobar ------------ */
+
+.blazRobarBlock {
+    overflow: hidden;
+    background-color: #EBEBEB;
+    padding: 6% 13%;
+}
+
+.blazRobarLink {
+    background-color: yellow;
+    width: 0%;
+    display: block;
+    height: 5%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    color: #09a3c0;
+    font-size: 32px;
+    transition: color 0.3s ease-out;
+}
+
+.blazRobarLink:hover {
+    color: #298090;
+}
+
+.contentContainer {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+.contentContainer div {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.contentContainer div:nth-child(odd) {
+    padding: 3% 5% 0 0;
+}
+
+.contentContainer div:nth-child(even) {
+    padding: 3% 0 0 5%;
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    .blazRobarLink {
+        font-size: 30px;
+    }
+    
+    .contentContainer div {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contentContainer div {
+        width: 100%;
+    }
+    
+    .contentContainer div:nth-child(2n) {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+    .blazRobarBlock {
+        padding: 8% 14%;
+    }
+    
+    .blazRobarLink {
+        font-size: 27px;
+    }
+    
+    .contentContainer div {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .blazRobarBlock {
+        padding: 9% 15%;
+    }
+    
+    .blazRobarLink {
+        font-size: 25px;
+    }
+    
+    .contentContainer div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blazRobarBlock {
+        padding: 9% 12%;
+    }
+    
+    .blazRobarLink {
+        font-size: 20px;
+    }
+    
+    .contentContainer div {
+        font-size: 12px;
+    }
+}
+
+/* ---------  end (BlazRobar) -------- */
+
+
+/* -------------------------- content ( end ) ------------------------- */
+
+
+
+
+
+
+/* ------------------------------ footer ------------------------------ */
+
+
+
+.footer {
+    background-color: #444;
+}
+
+.footer ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 45px 0 40px 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 3.125%;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    transition: color 0.3s ease-out;
+}
+
+.footer a:hover {
+    color: #15C3DB;
+}
+
+.rightsFooter {
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 541px) and (max-width: 833px) {
+    .footer ul {
+        padding: 35px 0 30px 0;
+    }
+    
+    .footer ul li a, .rightsFooter {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 540px) {
+    .footer ul li {
+        display: block;
+    }
+    
+    .footer ul li:nth-child(n+2) {
+        padding-top: 15px;
+    }
+    
+    .footer ul {
+        padding: 30px 0 25px 0;
+    }
+    
+    .footer ul li a, .rightsFooter {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer ul li {
+        display: block;
+    }
+    
+    .footer ul li:nth-child(n+2) {
+        padding-top: 15px;
+    }
+    
+    .footer ul {
+        padding: 25px 0 20px 0;
+    }
+    
+    .footer ul li a, .rightsFooter {
+        font-size: 11px;
+    }
+}
+
+
+
+/* --------------------------- end (footer) --------------------------- */
